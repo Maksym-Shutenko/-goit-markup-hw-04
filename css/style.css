@@ -156,8 +156,7 @@ img {
    background-position: center;
    background-size: cover;
 }
-.container-hero {
-}
+
 .hero-title {
    max-width: 496px;
    color: #fff;
@@ -384,9 +383,6 @@ img {
    width: calc((100% - 48px) / 3);
 }
 
-.port-img {
-}
-
 .port-title {
    color: #2e2f42;
    text-align: center;
@@ -433,12 +429,12 @@ img {
    flex-shrink: 0;
    display: flex;
    padding: 100px 0;
-}
-.footer-block {
    flex-direction: column;
 }
+
 .footer-section {
    display: flex;
+   align-items: baseline;
 }
 .footer-menu {
    margin-right: 120px;
@@ -473,15 +469,35 @@ img {
    letter-spacing: 0.02em;
    max-width: 264px;
 }
-.social-media {
-}
-.media {
-   color: #fff;
+
+.social-title .media {
+   color: #ffffff;
    font-weight: 500;
+   font-size: 16px;
    line-height: 1.5;
    letter-spacing: 0.02em;
+   margin-bottom: 16px;
 }
-.icons-footer {
-   width: 16px;
-   height: 16px;
+.social .social-footer {
+   display: flex;
+   gap: 16px;
+}
+.social-item .icon-footer {
+   width: 40px;
+   height: 40px;
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.social-link .link-footer {
+   width: 100%;
+   height: 100%;
+   background-color: #4d5ae5;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   fill: #f4f4fd;
+}
+. .social-link .icon-footer:hover,
+.social-link .icon-footer:focus {
+   background-color: #31d0aa;
 }
